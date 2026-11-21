@@ -1,0 +1,2 @@
+tb_board_top_v7 PS-RR mode: class mismatches 0/64, RR mismatches 0/64 -> PASS
+../tb_board_top_v7.v:46: $finish called at 391121565000 (1ps)

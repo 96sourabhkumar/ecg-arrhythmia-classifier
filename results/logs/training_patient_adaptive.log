@@ -1,0 +1,28 @@
+class weights [ 0.47  3.02  1.68  4.51 10.  ]
+ ep0 val acc 94.72 mF1 0.7449
+ ep1 val acc 97.77 mF1 0.8151
+ ep2 val acc 97.14 mF1 0.8063
+ ep3 val acc 96.83 mF1 0.8037
+ ep4 val acc 98.20 mF1 0.8346
+ ep5 val acc 97.08 mF1 0.8002
+ ep6 val acc 98.51 mF1 0.8609
+ ep7 val acc 98.82 mF1 0.8302
+ ep8 val acc 98.63 mF1 0.8775
+ ep9 val acc 98.63 mF1 0.8530
+ ep10 val acc 98.63 mF1 0.8745
+ ep11 val acc 98.70 mF1 0.8641
+ ep12 val acc 98.45 mF1 0.8714
+ ep13 val acc 98.70 mF1 0.8859
+ ep14 val acc 98.76 mF1 0.8848
+ ep15 val acc 98.82 mF1 0.8856
+ ep16 val acc 98.88 mF1 0.8975
+ ep17 val acc 98.88 mF1 0.8975
+ ep18 val acc 98.82 mF1 0.8857
+ ep19 val acc 98.88 mF1 0.8975
+selected epoch 16 (val acc 98.88%)
+TEST (scored once) float acc 97.11%  macro-F1 0.8340
+[[35580   399   115   186     0]
+ [  252  1319    24     0     0]
+ [   72    30  2506    44     0]
+ [   44     0    10   230     0]
+ [    2     0     2     1     0]]
