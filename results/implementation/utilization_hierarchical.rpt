@@ -1,0 +1,64 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct  9 08:09:27 2026
+| Host         : SourabhKumar running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file {D:/electronics ai/project/vivado/board_v7_pynqz2/reports_v7/board_top_v7_util_hier.rpt}
+| Design       : system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                     Instance                     |                                                Module                                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| system_wrapper                                   |                                                                                                (top) |       6146 |       3993 |    2020 |  133 | 4560 |      2 |      5 |          2 |
+|   system_i                                       |                                                                                               system |       6146 |       3993 |    2020 |  133 | 4560 |      2 |      5 |          2 |
+|     ps7_0_axi_periph                             |                                                                            system_ps7_0_axi_periph_0 |        360 |        301 |       0 |   59 |  426 |      0 |      0 |          0 |
+|       s00_couplers                               |                                                                             s00_couplers_imp_11SE3QO |        360 |        301 |       0 |   59 |  426 |      0 |      0 |          0 |
+|         auto_pc                                  |                                                                system_ps7_0_axi_periph_imp_auto_pc_0 |        360 |        301 |       0 |   59 |  426 |      0 |      0 |          0 |
+|           inst                                   |          system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_axi_protocol_converter |        360 |        301 |       0 |   59 |  426 |      0 |      0 |          0 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s |                             system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s |        360 |        301 |       0 |   59 |  426 |      0 |      0 |          0 |
+|               WR.aw_channel_0                    |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_aw_channel |         71 |         71 |       0 |    0 |   74 |      0 |      0 |          0 |
+|                 cmd_translator_0                 |              system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_cmd_translator |         31 |         31 |       0 |    0 |   56 |      0 |      0 |          0 |
+|               RD.ar_channel_0                    |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_ar_channel |         62 |         62 |       0 |    0 |   70 |      0 |      0 |          0 |
+|                 cmd_translator_0                 |            system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_cmd_translator_1 |         30 |         30 |       0 |    0 |   56 |      0 |      0 |          0 |
+|               RD.r_channel_0                     |                   system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_r_channel |         59 |         14 |       0 |   45 |   24 |      0 |      0 |          0 |
+|               SI_REG                             |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axi_register_slice |        137 |        137 |       0 |    0 |  240 |      0 |      0 |          0 |
+|                 ar.ar_pipe                       |                 system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice |         47 |         47 |       0 |    0 |   58 |      0 |      0 |          0 |
+|                 aw.aw_pipe                       |               system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice_0 |         53 |         53 |       0 |    0 |   60 |      0 |      0 |          0 |
+|                 r.r_pipe                         | system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice__parameterized2 |         27 |         27 |       0 |    0 |   92 |      0 |      0 |          0 |
+|     board_top_v7_0                               |                                                                              system_board_top_v7_0_0 |       5769 |       3676 |    2020 |   73 | 4101 |      2 |      5 |          2 |
+|       inst                                       |                                                                 system_board_top_v7_0_0_board_top_v7 |       5769 |       3676 |    2020 |   73 | 4101 |      2 |      5 |          2 |
+|         (inst)                                   |                                                                 system_board_top_v7_0_0_board_top_v7 |         33 |         33 |       0 |    0 |  114 |      0 |      0 |          0 |
+|         u_axi                                    |                                                             system_board_top_v7_0_0_axi_lite_ctrl_v7 |         80 |         80 |       0 |    0 |  128 |      0 |      0 |          0 |
+|         u_cnn                                    |                                                                system_board_top_v7_0_0_cnn_v6_shared |       3233 |       1213 |    2020 |    0 |  664 |      2 |      2 |          1 |
+|           (u_cnn)                                |                                                                system_board_top_v7_0_0_cnn_v6_shared |       2594 |        574 |    2020 |    0 |  352 |      2 |      2 |          0 |
+|           u_cv                                   |                                                                  system_board_top_v7_0_0_conv_engine |        388 |        388 |       0 |    0 |  171 |      0 |      0 |          0 |
+|           u_fc                                   |                                                                    system_board_top_v7_0_0_fc_engine |        223 |        223 |       0 |    0 |  123 |      0 |      0 |          1 |
+|         u_fe                                     |                                                          system_board_top_v7_0_0_frontend_top_shared |       2002 |       1929 |       0 |   73 | 2704 |      0 |      2 |          0 |
+|           (u_fe)                                 |                                                          system_board_top_v7_0_0_frontend_top_shared |         57 |         57 |       0 |    0 |  137 |      0 |      0 |          0 |
+|           u_fe                                   |                                                   system_board_top_v7_0_0_frontend_narrow_top_shared |        710 |        653 |       0 |   57 | 1495 |      0 |      0 |          0 |
+|             u_dv                                 |                                                                   system_board_top_v7_0_0_derivative |         79 |         79 |       0 |    0 |  118 |      0 |      0 |          0 |
+|             u_hp                                 |                                                                     system_board_top_v7_0_0_highpass |        115 |         82 |       0 |   33 |  119 |      0 |      0 |          0 |
+|             u_lp                                 |                                                                      system_board_top_v7_0_0_lowpass |         75 |         51 |       0 |   24 |   88 |      0 |      0 |          0 |
+|             u_mw                                 |                                                                          system_board_top_v7_0_0_mwi |        441 |        441 |       0 |    0 | 1170 |      0 |      0 |          0 |
+|           u_rr                                   |                                                                    system_board_top_v7_0_0_rr_engine |        494 |        478 |       0 |   16 |  464 |      0 |      0 |          0 |
+|           u_th                                   |                                                                system_board_top_v7_0_0_threshold_fsm |        758 |        758 |       0 |    0 |  608 |      0 |      2 |          0 |
+|         u_peak_q                                 |                                                                   system_board_top_v7_0_0_small_fifo |         78 |         78 |       0 |    0 |  169 |      0 |      0 |          0 |
+|         u_rr_q                                   |                                                   system_board_top_v7_0_0_small_fifo__parameterized0 |        104 |        104 |       0 |    0 |  233 |      0 |      0 |          0 |
+|         u_shared_mult                            |                                                                  system_board_top_v7_0_0_shared_mult |        213 |        213 |       0 |    0 |   79 |      0 |      0 |          1 |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
