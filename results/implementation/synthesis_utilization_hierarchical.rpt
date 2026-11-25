@@ -1,0 +1,63 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Oct  9 08:06:12 2026
+| Host         : SourabhKumar running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file {D:/electronics ai/project/vivado/board_v7_pynqz2/reports_v7/board_top_v7_synth_util_hier.rpt}
+| Design       : system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                     Instance                     |                                                Module                                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| system_wrapper                                   |                                                                                                (top) |       6395 |       4228 |    2028 |  139 | 4805 |      2 |      5 |          2 |
+|   system_i                                       |                                                                                               system |       6395 |       4228 |    2028 |  139 | 4805 |      2 |      5 |          2 |
+|     ps7_0_axi_periph                             |                                                                            system_ps7_0_axi_periph_0 |        421 |        356 |       0 |   65 |  562 |      0 |      0 |          0 |
+|       s00_couplers                               |                                                                             s00_couplers_imp_11SE3QO |        421 |        356 |       0 |   65 |  562 |      0 |      0 |          0 |
+|         auto_pc                                  |                                                                system_ps7_0_axi_periph_imp_auto_pc_0 |        421 |        356 |       0 |   65 |  562 |      0 |      0 |          0 |
+|           inst                                   |          system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_axi_protocol_converter |        421 |        356 |       0 |   65 |  562 |      0 |      0 |          0 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s |                             system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s |        421 |        356 |       0 |   65 |  562 |      0 |      0 |          0 |
+|               WR.aw_channel_0                    |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_aw_channel |         77 |         77 |       0 |    0 |   86 |      0 |      0 |          0 |
+|                 cmd_translator_0                 |              system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_cmd_translator |         33 |         33 |       0 |    0 |   68 |      0 |      0 |          0 |
+|               RD.ar_channel_0                    |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_ar_channel |         68 |         68 |       0 |    0 |   82 |      0 |      0 |          0 |
+|                 cmd_translator_0                 |            system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_cmd_translator_1 |         32 |         32 |       0 |    0 |   68 |      0 |      0 |          0 |
+|               RD.r_channel_0                     |                   system_ps7_0_axi_periph_imp_auto_pc_0_axi_protocol_converter_v2_1_36_b2s_r_channel |         62 |         15 |       0 |   47 |   24 |      0 |      0 |          0 |
+|               SI_REG                             |                  system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axi_register_slice |        177 |        177 |       0 |    0 |  352 |      0 |      0 |          0 |
+|                 ar.ar_pipe                       |                 system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice |         68 |         68 |       0 |    0 |  112 |      0 |      0 |          0 |
+|                 aw.aw_pipe                       |               system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice_0 |         72 |         72 |       0 |    0 |  114 |      0 |      0 |          0 |
+|                 r.r_pipe                         | system_ps7_0_axi_periph_imp_auto_pc_0_axi_register_slice_v2_1_35_axic_register_slice__parameterized2 |         27 |         27 |       0 |    0 |   96 |      0 |      0 |          0 |
+|     board_top_v7_0                               |                                                                              system_board_top_v7_0_0 |       5931 |       3830 |    2028 |   73 | 4203 |      2 |      5 |          2 |
+|       inst                                       |                                                                 system_board_top_v7_0_0_board_top_v7 |       5931 |       3830 |    2028 |   73 | 4203 |      2 |      5 |          2 |
+|         (inst)                                   |                                                                 system_board_top_v7_0_0_board_top_v7 |         34 |         34 |       0 |    0 |  114 |      0 |      0 |          0 |
+|         u_axi                                    |                                                             system_board_top_v7_0_0_axi_lite_ctrl_v7 |         85 |         85 |       0 |    0 |  128 |      0 |      0 |          0 |
+|         u_cnn                                    |                                                                system_board_top_v7_0_0_cnn_v6_shared |       3286 |       1258 |    2028 |    0 |  664 |      2 |      2 |          1 |
+|           (u_cnn)                                |                                                                system_board_top_v7_0_0_cnn_v6_shared |       2616 |        588 |    2028 |    0 |  352 |      2 |      2 |          0 |
+|           u_cv                                   |                                                                  system_board_top_v7_0_0_conv_engine |        401 |        401 |       0 |    0 |  171 |      0 |      0 |          0 |
+|           u_fc                                   |                                                                    system_board_top_v7_0_0_fc_engine |        240 |        240 |       0 |    0 |  123 |      0 |      0 |          1 |
+|         u_fe                                     |                                                          system_board_top_v7_0_0_frontend_top_shared |       2064 |       1991 |       0 |   73 | 2774 |      0 |      2 |          0 |
+|           (u_fe)                                 |                                                          system_board_top_v7_0_0_frontend_top_shared |         66 |         66 |       0 |    0 |  169 |      0 |      0 |          0 |
+|           u_fe                                   |                                                   system_board_top_v7_0_0_frontend_narrow_top_shared |        751 |        694 |       0 |   57 | 1495 |      0 |      0 |          0 |
+|             u_dv                                 |                                                                   system_board_top_v7_0_0_derivative |         95 |         95 |       0 |    0 |  118 |      0 |      0 |          0 |
+|             u_hp                                 |                                                                     system_board_top_v7_0_0_highpass |        136 |        103 |       0 |   33 |  119 |      0 |      0 |          0 |
+|             u_lp                                 |                                                                      system_board_top_v7_0_0_lowpass |         76 |         52 |       0 |   24 |   88 |      0 |      0 |          0 |
+|             u_mw                                 |                                                                          system_board_top_v7_0_0_mwi |        444 |        444 |       0 |    0 | 1170 |      0 |      0 |          0 |
+|           u_rr                                   |                                                                    system_board_top_v7_0_0_rr_engine |        502 |        486 |       0 |   16 |  505 |      0 |      0 |          0 |
+|           u_th                                   |                                                                system_board_top_v7_0_0_threshold_fsm |        762 |        762 |       0 |    0 |  605 |      0 |      2 |          0 |
+|         u_peak_q                                 |                                                                   system_board_top_v7_0_0_small_fifo |         83 |         83 |       0 |    0 |  169 |      0 |      0 |          0 |
+|         u_rr_q                                   |                                                   system_board_top_v7_0_0_small_fifo__parameterized0 |        115 |        115 |       0 |    0 |  265 |      0 |      0 |          0 |
+|         u_shared_mult                            |                                                                  system_board_top_v7_0_0_shared_mult |        232 |        232 |       0 |    0 |   79 |      0 |      0 |          1 |
++--------------------------------------------------+------------------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
