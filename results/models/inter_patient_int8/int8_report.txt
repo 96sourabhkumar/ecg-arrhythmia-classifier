@@ -1,0 +1,14 @@
+INT8 (hardware-exact) vs float, DS2 inter-patient
+====================================================
+  INT8 accuracy   : 95.58%
+  INT8 macro-F1   : 0.6422
+  float reference : 95.65%  /  0.6343
+
+  Se(N/S/V/F) = 98.16 / 61.46 / 90.99 / 2.32
+
+confusion (rows=TRUE):
+  N    43410     436     324      52       0
+  S      625    1129      83       0       0
+  V      247       8    2930      35       0
+  F      374       1       4       9       0
+  Q        4       0       3       0       0
